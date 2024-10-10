@@ -15,7 +15,6 @@ with open("phonebook_raw.csv", encoding="utf-8") as f:
 list1 = []
 for i in contacts_list:
     list1.append(" ".join(i[:3]).split())
-
 #pprint(list1)
 
 #вытаскиваем телефоны
@@ -32,7 +31,6 @@ for i in list2:
     sub = r'+7(\2)\3-\4-\5\7\8\9'
     result = re.sub(pattern, sub, i)
     list3.append(result)
-
 #print(list3)
 
 #поиск дублей по имени и фамилии
